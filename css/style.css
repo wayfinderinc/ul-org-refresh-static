@@ -3904,6 +3904,11 @@ section {
   padding-top: 12px;
 }
 
+.cards_focus-areas .card .card-body:hover {
+  -webkit-box-shadow: 0 12px 32px 0 rgba(20, 24, 29, 0.12);
+          box-shadow: 0 12px 32px 0 rgba(20, 24, 29, 0.12);
+}
+
 .cards_focus-areas .card .card-body:hover .icon {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
@@ -4798,8 +4803,9 @@ section {
 }
 
 .cards_focus-areas-how-we-help .card .info a:hover {
-  color: #C02032;
-  border: 1px solid #C02032;
+  color: #fff;
+  border: 1px solid #212121;
+  background: #212121;
 }
 
 .cards_focus-area-initiative-updates {
@@ -6719,7 +6725,8 @@ section {
 }
 
 .ul-search form .navbar .form-submit:hover {
-  background-color: #c62232;
+  background-color: #212121;
+  border: 1px solid #212121;
 }
 
 .search-results {
