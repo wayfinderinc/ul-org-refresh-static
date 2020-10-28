@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="188px" viewBox="0 0 200 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>focus-area-chemical-safety</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(0.000000, 4.000000)">
+            <ellipse id="Oval-3" stroke="#4C9E45" stroke-width="8" cx="100" cy="18" rx="17" ry="18"></ellipse>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" x="0" y="141" width="8" height="43"></rect>
+            <rect id="Rectangle-6" fill="#4C9E45" fill-rule="nonzero" x="8" y="157" width="18" height="8"></rect>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" x="26" y="141" width="8" height="43"></rect>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" x="166" y="141" width="8" height="43"></rect>
+            <rect id="Rectangle-6" fill="#4C9E45" fill-rule="nonzero" x="174" y="157" width="18" height="8"></rect>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" x="192" y="141" width="8" height="43"></rect>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" x="89" y="46" width="6" height="40"></rect>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" transform="translate(140.619546, 135.964102) rotate(-60.000000) translate(-140.619546, -135.964102) " x="137.619546" y="116.964102" width="6" height="38"></rect>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" transform="translate(57.454483, 135.964102) rotate(60.000000) translate(-57.454483, -135.964102) " x="54.4544829" y="116.964102" width="6" height="38"></rect>
+            <rect id="Rectangle-5" fill="#4C9E45" fill-rule="nonzero" x="105" y="46" width="6" height="40"></rect>
+            <path d="M114.944336,104.573242 C112.685221,97.9332682 107.839518,94.6132812 100.407227,94.6132812 C89.2587891,94.6132812 83.6328125,102.954102 83.6328125,114.676758 C83.6328125,126.399414 91.0556641,134.422852 100.407227,134.422852 C109.758789,134.422852 113.076172,128.682617 114.944336,122.961914" id="Path-10" stroke="#4C9E45" stroke-width="8"></path>
+        </g>
+    </g>
+</svg>

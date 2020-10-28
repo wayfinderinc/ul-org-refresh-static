@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="204px" viewBox="0 0 128 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>focus-area-data-science</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-7" transform="translate(4.000000, 4.000000)" stroke="#D0922A">
+            <polygon id="Shape" stroke-width="8" points="115.751897 60 0.0690656267 60 43.6090324 98.0583992 43.6090324 146.048531 72.2119303 121.417834 72.2119303 98.0583992"></polygon>
+            <circle id="Oval" stroke-width="8" cx="17.0061345" cy="23" r="8"></circle>
+            <ellipse id="Oval" stroke-width="8" cx="11.0061345" cy="188.037472" rx="7.15072447" ry="7.15084746"></ellipse>
+            <ellipse id="Oval" stroke-width="8" cx="41.6090324" cy="173.735777" rx="7.15072447" ry="7.15084746"></ellipse>
+            <ellipse id="Oval" stroke-width="8" cx="111.965553" cy="152.283234" rx="7.15072447" ry="7.15084746"></ellipse>
+            <ellipse id="Oval" stroke-width="8" cx="74.0612058" cy="8.00013759" rx="8" ry="8.00013759"></ellipse>
+            <ellipse id="Oval" stroke-width="8" cx="98.5133793" cy="30.0001376" rx="8" ry="8.00013759"></ellipse>
+            <ellipse id="Oval" stroke-width="8" cx="52.6090324" cy="34.0002064" rx="12" ry="12.0002064"></ellipse>
+            <ellipse id="Oval" stroke-width="8" cx="77.3900301" cy="177.311201" rx="10.7260867" ry="10.7262712"></ellipse>
+            <line x1="19.6006915" y1="184.256587" x2="34.4583079" y2="176.311201" id="Shape" stroke-width="6"></line>
+            <line x1="86.3681619" y1="171.511069" x2="104.642236" y2="157.050466" id="Shape" stroke-width="6"></line>
+            <line x1="51.7597569" y1="174.735777" x2="65.6639434" y2="178.311201" id="Shape" stroke-width="6"></line>
+        </g>
+    </g>
+</svg>

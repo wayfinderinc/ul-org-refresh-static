@@ -1,0 +1,263 @@
+header { position: fixed; width: 100%; z-index: 999999; background:#fff; box-shadow: 0 2px 6px 0 rgba(0,0,0,0.08);
+    .desktop-nav { display: none; justify-content: space-between; align-items: center; font-size: 18px;
+        @include respond-to(desktop-1024) { position: relative; display: flex; flex-direction: row; width: 100%; padding: 0 32px; margin: 0 auto; }
+        @include respond-to(desktop-1280) { max-width: 1144px; padding: 0; }
+        .primary-navigation { display: flex; align-items: center; width: 100%; height: 60px;
+            .menu { display: flex; flex-direction: column; justify-content: space-between; position: relative; min-width: 22px; height: 16px; cursor: pointer;
+                .line { width: 20px; height: 2px; background: #212121; }
+            }
+            .logo { min-width: 254px; font-size: 19px; font-weight: 700; margin-left: 32px;
+                a { &:link, &:visited, &:active { color: #212121; } }
+                .hamburger-nav-dropdown { display: block; position: fixed; width: 100%; height: 444px; overflow: hidden; background: #fff; background-image: linear-gradient(90deg, #F5F5F5 50%, #FFFFFF 50%); margin-top: 17px; left: 0; box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.1), 0 4px 4px 0 rgba(0,0,0,0.08); display: none; 
+                    .content-dropdown { display: flex; justify-content: space-between; position: relative; width: 100%;
+                        @include respond-to(desktop-1024) { padding: 0 32px; }
+                        @include respond-to(desktop-1280) { padding: 0; max-width: 1144px; margin: 0 auto; }
+                        .hamburger-menu { position: relative; min-width: 256px; margin-left: -16px;
+                            ul { font-size: 21px; font-weight: 400; padding-top: 32px;
+                                li { display: flex; justify-content: space-between; align-items: center;
+                                    a { width: 100%; line-height: 60px; padding-left: 16px; 
+                                        &:link, &:visited, &:active { color: inherit; }
+                                    }
+                                    &.active { background: #fff; }
+                                    .caret { position: relative; width: 11px; height: 16px; background: url(../app/creative/hamburger-menu-caret.svg) no-repeat; background-size: cover; margin-right: 20px; filter: grayscale(1); }
+                                    &:hover .caret { filter: grayscale(0); }
+                                }
+                            }
+                        }
+                        .hamburger-menu-info { display: flex; justify-content: space-between; position: relative; width: 100%; background: #fff; padding: 40px 0 100% 56px; box-shadow: -4px 2px 4px 0 rgba(0,0,0,0.04), inset 0 10px 10px -10px rgba(0,0,0,0.1);
+                            .info { width: auto; font-weight: 400; padding-right: 32px;
+                                hr { height: 1px; background: #E8E8E8; padding: 0; margin: 16px 0 20px; border: 0; }
+                                & > div { display: flex; }
+                                h2 { font-size: 36px; }
+                                .description { max-width: 236px; font-size: 14px; line-height: 24px; color: #4A4A4A; margin-right: 40px; }
+                                ul { font-size: 18px; margin-top: 1px;
+                                    li { color: #4A4A4A; margin: 0 0 18px; height: auto; 
+                                        a { height: auto; 
+                                            &:link, &:visited, &:active { color: inherit; }
+                                            &:hover { color: $primary-color; }
+                                        }
+                                    }
+                                }
+                            }
+                            img { width: 100%; height: auto; max-width: 304px; margin: 24px 0 0; display: none;
+                                @include respond-to(desktop-1280) { display: block; }
+                            }
+                        }
+                        #hamburger-menu-focus-area-info { display: none; }
+                    }
+                }
+            }
+            ul.primary-menu { display: flex; flex-direction: row; position: relative; margin: 0; padding: 0; list-style: none; font-size: 16px; margin-left: 16px; height: 58px;
+                li { margin: 1px 0 0 24px; color: #000; height: 58px;
+                    a { display: flex; align-items: center; color: inherit; height: 58px;
+                        &:link, &:visited, &:active { color: inherit; }
+                        &:hover { color: $primary-color; }
+                    }
+                    &.active { border-bottom: 4px solid #C02032; 
+                        a { color: $primary-color; }
+                    }
+                    .nav-dropdown { display: block; position: fixed; width: 100%; background: #fff; margin-top: -1px; left: 0; padding: 36px 0 56px; box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.1), 0 8px 8px 0 rgba(0,0,0,0.04); display: none; 
+                        .content-dropdown { display: flex; justify-content: space-between; position: relative; width: 100%;  
+                            @include respond-to(desktop-1024) { padding: 0 32px; }
+                            @include respond-to(desktop-1280) { padding: 0; max-width: 1144px; margin: 0 auto; }
+                            .info { width: 100%; max-width: 680px;
+                                hr { height: 1px; background: #E8E8E8; padding: 0; margin: 16px 0 20px; border: 0; }
+                                & > div { display: flex; }
+                                h2 { font-size: 36px; }
+                                .description { max-width: 236px; font-size: 14px; line-height: 24px; color: #4A4A4A; margin-right: 56px; }
+                                ul { font-size: 18px; margin-top: 1px;
+                                    li { color: #4A4A4A; margin: 0 0 18px; height: auto; 
+                                        a { color: #4A4A4A; height: auto; 
+                                            &:link, &:visited, &:active { color: inherit; }
+                                            &:hover { color: $primary-color }
+                                        }
+                                    }
+                                }
+                            }
+                            img { width: 100%; height: auto; max-width: 440px; margin: 24px 0 0; }
+                        }
+                    }
+                }
+            }
+            ul.secondary-menu { display: flex; flex-direction: row; position: relative; margin: 0; padding: 0; list-style: none; margin-left: 32px; display: none;
+                li { display: none; 
+                    &.active { display: block; }
+                }
+            }
+            .search-menu { display: flex; align-items: center; position: relative; width: 100%; height: 60px; border-left: 1px solid #E8E8E8; margin-left: 40px; padding-left: 32px; display: none;
+                .hidden { display: none; }
+                input { width: 97%; height: 100%; padding-top: 2px; font-size: 14px; border: 0;
+                    &::-webkit-search-cancel-button{ color: #212121; -webkit-appearance: none; width: 10px; height: 10px; background: url(../app/creative/search-times.svg) no-repeat; background-size: cover; cursor: pointer; }
+                }
+            }
+        }
+        .secondary-navigation { display: flex; align-items: center;
+            ul { display: flex; flex-direction: row; margin: 0; padding: 0; list-style: none; font-size: 16px;
+                li { margin: 2px 40px 0 0; color: #000;
+                    &.active { border-bottom: 3px solid; }
+                    a { color: inherit;
+                        &:link, &:visited, &:active { color: inherit; }
+                        &:hover { color: $primary-color; }
+                    }
+                }
+            }
+            .search { cursor: pointer;
+                &_icon { width: 21px; height: 21px; background: url(../app/creative/search.svg) no-repeat; background-size: cover; }
+            }
+        }
+    }
+    .mobile-nav { display: flex; flex-direction: column; position: relative; width: 100%;
+        @include respond-to(desktop-1024) { display: none; }
+        .nav-bar { display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; height: 60px; padding: 20px;
+            @include respond-to(tablet) { padding: 0 32px; }
+            .menu { display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 22px; height: 16px; cursor: pointer;
+                .line { width: 22px; height: 2px; background: #212121; }
+            }
+            .logo { min-width: 187px; font-size: 16px; font-weight: 700; }
+            .search { cursor: pointer;
+                &_icon { width: 20px; height: 20px; background: url(../app/creative/search.svg) no-repeat; background-size: cover; }
+            }
+        }
+        .nav-menu { display: none; position: relative; width: 100%; height: 100vh;
+            @include respond-to(tablet) { padding: 0 20px; }
+            .primary-navigation { display: flex; width: 100%; border-top: 1px solid #E8E8E8;
+                @include respond-to(tablet) { border-top: 0; }
+                ul { width: 100%; font-size: 21px; font-weight: 400; padding-top: 16px;
+                    @include respond-to(tablet) { padding-top: 32px; }
+                    li { display: flex; justify-content: space-between; align-items: center; color: #4a4a4a;
+                        a { width: 100%; line-height: 60px; padding-left: 16px;
+                            &:link, &:visited, &:active { color: inherit; }
+                        }
+                        &.active { background: #fff; }
+                        .caret { position: relative; width: 12px; height: 16px; background: url(../app/creative/hamburger-menu-caret.svg) no-repeat; background-size: cover; margin-right: 20px; filter: grayscale(1); }
+                        &:hover .caret { filter: grayscale(0); }
+                    }
+                }
+            }
+            .secondary-navigation { display: flex; width: 100%; background: #E8E8E8; border-top: 1px solid #E8E8E8; display: none;
+                @include respond-to(tablet) { border-top: 0; }
+                .about { display: block; }
+                .focus-area { display: none; }
+                ul { width: 100%; font-size: 18px; font-weight: 400;
+                    li { display: flex; justify-content: space-between; align-items: center; color: #4a4a4a; padding: 0 20px;
+                        a { width: 100%; line-height: 60px;  
+                            &:link, &:visited, &:active { color: inherit; }
+                        }
+                        &:first-child { font-size: 21px; background: #fff;  
+                            a { line-height: 80px; }
+                        }
+                        &:nth-child(2) { padding-top: 16px; }
+                        &:not(:first-child) { margin-left: 30px; }
+                        &.active { background: #fff; }
+                        .caret { position: relative; width: 12px; height: 16px; background: url(../app/creative/hamburger-menu-caret.svg) no-repeat; background-size: cover; margin-right: 20px; filter: grayscale(1); transform: rotate(180deg); }
+                        &:hover .caret { filter: grayscale(0); }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.path-focus-area {
+    header .desktop-nav .primary-navigation ul.primary-menu { display: none; }
+    header .desktop-nav .primary-navigation ul.secondary-menu { display: flex; }
+}
+
+.section-focus-area, .section-about-nav { position: fixed; background: #F7F7F7; padding: 60px 0 0; z-index: 99999; }
+.focus-area-nav { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 20px;
+    @include respond-to(tablet) { position: relative; flex-direction: row; padding: 0 32px; height: 60px; }
+    @include respond-to(desktop-1024) { padding: 0 32px; }
+    @include respond-to(desktop-1280) { padding: 0; max-width: 1144px; }
+    .primary-navigation { display: flex; align-items: center; height: 100%; display: none;
+        @include respond-to(tablet) { display: flex; }
+        ul { display: flex; flex-direction: row; height: 100%; margin: 0; padding: 0; list-style: none; font-size: 14px;
+            li { display: flex; align-items: center; position: relative; height: 100%; margin: 0 28px 0 0; color: #212121;
+                &:after { position: absolute; content: ''; border-bottom: 4px solid transparent; width: 100%; height: 4px; bottom: 0; left: 0; }
+                a { color: inherit;
+                    &:link, &:visited, &:active { color: inherit; }
+                    &:hover { color: $primary-color; }
+                    
+                }
+                &.active:after { border-bottom: 4px solid #C02032; }
+                &.active a { color: $primary-color; }
+            }
+        }
+    }
+    .secondary-navigation { display: none; align-items: center;
+        @include respond-to(tablet) { display: flex; }
+        ul { display: flex; flex-direction: row; align-items: baseline; margin: 0; padding: 0; list-style: none; font-size: 16px;
+            li { margin: 2px 0 0 28px; color: #000;
+                a { color: inherit;
+                    &:link, &:visited, &:active { color: inherit; }
+                    .social-facebook { position: relative; width: 10px; height: 18px; background: url(../app/creative/icon-facebook.svg) no-repeat; background-size: cover; }
+                    .social-twitter { position: relative; width: 18px; height: 15px; background: url(../app/creative/icon-twitter.svg) no-repeat; background-size: contain; }
+                    .social-instagram { position: relative; width: 16px; height: 16px; background: url(../app/creative/icon-instagram.svg) no-repeat; background-size: cover; }
+                    .social-linkedin { position: relative; width: 16px; height: 16px; background: url(../app/creative/icon-linkedin.svg) no-repeat; background-size: cover; }
+                    .social-youtube { position: relative; width: 20px; height: 14px; background: url(../app/creative/icon-youtube.svg) no-repeat; background-size: cover; }
+                    .social-vimeo { position: relative; width: 16px; height: 16px; background: url(../app/creative/icon-vimeo.svg) no-repeat; background-size: cover; }
+                    .icon-social { filter: grayscale(1); opacity: .7; }
+                    &:hover .icon-social { filter: grayscale(0); opacity: 1; }
+                }
+            }
+        }
+    }
+    .mobile-navigation { display: flex; align-items: center; width: 100%; height: 60px;
+        @include respond-to(tablet) { display: none; }
+        .controls_focusarea { width: 100%; font-size: 14px; 
+            .hidden { display: none; }
+            select { border: none; display: inline-block; width: 100%; font: inherit; padding: 0.5em 1.6em 0.5em 0; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; }
+            select { background-color: #F7F7F7; background-image: linear-gradient(45deg, transparent 50%, #212121 50%), linear-gradient(135deg, #212121 50%, transparent 50%), linear-gradient(to right, #F7F7F7, #F7F7F7); background-position: calc(100% - 10px) calc(1em + 1px), calc(100% - 5px) calc(1em + 1px), calc(100% - 2.5em) 0.5em; background-size: 5px 5px, 5px 5px, 1px 1.5em; background-repeat: no-repeat; }
+            select::-ms-expand { display: none; }
+            select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #000; }
+        }
+    }
+}
+.about-nav { display: flex; align-items: center; height: 76px;
+    @include respond-to(tablet) { position: relative; width: 100%; height: 60px; padding: 0 32px; }
+    @include respond-to(desktop-1280) { padding: 0; max-width: 1144px; }
+    .primary-navigation { display: flex; align-items: center; height: 100%; padding: 8px 20px;
+        @include respond-to(tablet) { padding: 0; }
+        ul { display: flex; flex-wrap: wrap; flex-direction: row; height: 100%; margin: 0; padding: 0; list-style: none; font-size: 14px;
+            li { display: flex; align-items: center; position: relative; height: 50%; margin: 0 28px 0 0; color: #212121;
+                @include respond-to(tablet) { height: 100%; }
+                a { display: flex; align-items: center; color: inherit; height: 100%;
+                    &:link, &:visited, &:active { color: inherit; }
+                    &:hover { color: $primary-color; }
+                    &:after { position: absolute; content: ''; border-bottom: 4px solid #C02032; width: 0%; height: 4px; bottom: 0; transition: width 0.2s ease-out;  }
+                    &.active { color: $primary-color; }
+                    &.active:after { width: 100%; border-bottom: 4px solid #C02032; }
+                }
+            }
+        }
+    }
+}
+
+footer { display: flex; flex-direction: column; align-items: center; position: relative; width: 100%; background: #282C35; color: #fff;
+    .primary-footer { display: flex; flex-direction: column; justify-content: space-between; position: relative; padding: 44px 32px 44px 20px; margin-top: 0;
+        @include respond-to(tablet) { flex-direction: row; padding: 56px 24px; }
+        @include respond-to(desktop-1024) { padding: 48px 32px; }
+        @include respond-to(desktop-1280) { padding: 56px; }
+        .boilerplate { width: 100%; font-size: 14px; line-height: 24px;
+            @include respond-to(tablet) { max-width: 64%; padding-right: 40px; }
+            @include respond-to(desktop-1024) { max-width: 52%; padding-right: 0; }
+        }
+        ul { font-size: 12px; font-weight: 700; letter-spacing: 1px; margin: 32px 0 0; padding: 0; list-style: none;
+            @include respond-to(tablet) { margin: 2px 0 0; }
+            li { margin-bottom: 24px;  
+                @include respond-to(tablet) { margin-bottom: 16px; cursor: pointer; }
+                a { color: inherit;
+                    &:link, &:visited, &:active { color: inherit; }
+                    &:hover { color: inherit; text-decoration: underline; }
+                }
+            }
+        }
+        .ul-logo { position: relative; max-width: 36px; margin-top: 12px; 
+            @include respond-to(tablet) { margin-top: 2px; }
+        }
+    }
+    .secondary-footer { display: flex; justify-content: center; position: relative; width: 100%; background: #191C23;
+        .copyright { font-size: 12px; padding: 24px 20px; text-align: center; 
+            @include respond-to(tablet) { font-size: 14px; padding: 24px 0; }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="176px" height="188px" viewBox="0 0 176 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>focus-area-standards</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" transform="translate(4.000000, 2.000000)">
+            <g id="Group-5" transform="translate(0.000000, 16.000000)">
+                <rect id="Rectangle-8" fill="#00518A" fill-rule="nonzero" x="66" y="0" width="106" height="8"></rect>
+                <rect id="Rectangle-8" fill="#00518A" fill-rule="nonzero" x="66" y="22" width="64" height="8"></rect>
+                <rect id="Rectangle-7" stroke="#00518A" stroke-width="8" x="0" y="64" width="36" height="36"></rect>
+                <polyline id="Path-11" stroke="#00518A" stroke-width="6" points="10.2089844 76.8378906 19.9453125 86.2167969 55.2285156 51.15625"></polyline>
+            </g>
+            <g id="Group-4" transform="translate(0.000000, 83.000000)">
+                <rect id="Rectangle-8" fill="#00518A" fill-rule="nonzero" x="66" y="0" width="106" height="8"></rect>
+                <rect id="Rectangle-8" fill="#00518A" fill-rule="nonzero" x="66" y="22" width="64" height="8"></rect>
+                <rect id="Rectangle-7" stroke="#00518A" stroke-width="8" x="0" y="63" width="36" height="36"></rect>
+                <polyline id="Path-11" stroke="#00518A" stroke-width="6" points="10.2089844 75.8378906 19.9453125 85.2167969 55.2285156 50.15625"></polyline>
+            </g>
+            <g id="Group-3">
+                <rect id="Rectangle-8" fill="#00518A" fill-rule="nonzero" x="66" y="149" width="106" height="8"></rect>
+                <rect id="Rectangle-8" fill="#00518A" fill-rule="nonzero" x="66" y="171" width="64" height="8"></rect>
+                <rect id="Rectangle-7" stroke="#00518A" stroke-width="8" x="0" y="13" width="36" height="36"></rect>
+                <polyline id="Path-11" stroke="#00518A" stroke-width="6" points="10.2089844 25.8378906 19.9453125 35.2167969 55.2285156 0.15625"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

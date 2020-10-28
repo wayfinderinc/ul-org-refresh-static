@@ -1,0 +1,75 @@
+.site-introduction { display: flex; flex-direction: column; justify-content: space-between; margin-top: 0; padding-top: 0; padding-bottom: 32px;
+    @include respond-to(desktop-1024) { flex-direction: row; padding-bottom: 0; }
+    &_info { position: relative; width: 100%; padding: 36px 0 0; background: #fff;
+        @include respond-to(desktop-1024) { flex-direction: row; max-width: 624px; padding: 48px 32px 0; margin: -220px 0 0 -32px; }
+        &_shadow { position: absolute; top: 0px; left: 0px; width: 100%; height: 272px; box-shadow: 0 -16px 16px 0 rgba(0,0,0,0.1); display: none;
+            @include respond-to(desktop-1024) { display: block; }
+        }
+        h1 { padding-bottom: 20px; padding-right: 8px;
+            @include respond-to(desktop-1024) { display: block; padding-right: 0; }
+        }
+        h4 { padding-bottom: 32px; }
+        p { font-size: 16px; line-height: 28px; }
+    }
+    &_media { position: relative; width: 100%;
+        @include respond-to(tablet) { max-width: 456px; }
+        .slick-slider { padding-top: 40px;
+            @include respond-to(tablet) { padding-top: 48px; }
+            .slider-content { position: relative; width: 100%; padding: 0;
+                .img { position: relative; width: 100%; height: 264px; }
+                .grey { background: $cloud-grey-color; }
+                .tomato { background: tomato; }
+                .blue { background: blue; }
+                .img1 { background: url(../app/creative/images/slider-media-img-1.jpg) no-repeat; background-size: cover; background-position: center center; }
+                .img2 { background: url(../app/creative/images/slider-media-img-2.jpg) no-repeat; background-size: cover; background-position: center center; }
+                .img3 { background: url(../app/creative/images/slider-media-img-3.jpg) no-repeat; background-size: cover; background-position: center center; }
+                .caption { position: relative; font-size: 14px; line-height: 21px; padding-top: 16px;
+                    &:after { content: ''; position: absolute; background: url(../app/creative/caption-caret-blue.png); background-size: contain; background-repeat: no-repeat; width: 9px; height: 8px; margin: 9px 0 0 8px; }
+                }
+            }
+            .slick-dots { bottom: -32px; text-align: left; margin-left: -7px; }
+            .slick-dots li { margin: 0 1px; }
+            .slick-dots li button:before { font-size: 32px; color: #212121;  }
+            .slick-dots li.slick-active button:before { color: #212121; }
+        }
+        .site-introduction_media_video { position: relative; padding-top: 48px; display: none;
+            .video-wrapper { background: tomato; height: 248px; border-radius: 4px; overflow: hidden; }
+            .caption-title { padding-top: 16px; font-size: 16px; font-weight: 700; }
+            .caption-description { padding-top: 8px; font-size: 14px; line-height: 21px; max-width: 384px; }
+        }
+    }
+}
+
+.home_prefooter { display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 100%; padding-bottom: 8px;
+    @include respond-to(tablet) { flex-direction: row; }
+    & > div { display: flex; width: 100%; background: $primary-color; color: #fff;
+        @include respond-to(tablet) { max-width: 50%; }
+    }
+    & > div:first-child { justify-content: flex-end; border-bottom: 3px solid #fff;
+        @include respond-to(tablet) { border-bottom: 0; border-right: 4px solid #fff; }
+        .info { padding: 48px 20px 52px;
+            @include respond-to(tablet) { padding: 64px 40px 88px 32px; }
+            @include respond-to(desktop-1280) { padding: 64px 40px 88px 0; }
+        }
+    }
+    & > div:last-child { border-top: 3px solid #fff;
+        @include respond-to(tablet) { border-top: 0; border-left: 4px solid #fff; }
+        .info { padding: 48px 20px 52px;
+            @include respond-to(tablet) { padding: 64px 32px 88px 40px; }
+            @include respond-to(desktop-1280) { padding: 64px 0 88px 40px; }
+        }
+    }
+    .info { width: 100%; max-width: 572px;
+        h2 { font-weight: 400; padding-bottom: 16px; }
+        & > div { display: flex; flex-direction: column;
+            @include respond-to(desktop-1280) { flex-direction: row; }
+        }
+        p { font-size: 16px; padding-bottom: 32px;
+            @include respond-to(desktop-1280) { flex-direction: row; padding-right: 40px; padding-bottom: 0; }
+        }
+        a { min-width: 160px; height: 54px; line-height: 54px; text-align: center; border: 1px solid #fff; border-radius: 4px; transition: all 0.2s ease-out;
+            &:link, &:visited, &:active { color: inherit; }
+            &:hover { background: #fff; color: #212121; }
+        }
+    }
+}

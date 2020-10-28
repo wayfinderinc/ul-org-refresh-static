@@ -1,0 +1,550 @@
+/* CARDS FOUND IN INDEX PAGE ONLY */
+
+.cards_home-latest-news { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px;
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 50%; max-width: 50%; }
+        @include respond-to(desktop-1024) { /*flex: 0 0 25%;*/ flex: 1; flex-grow: 1; max-width: 50%; margin-bottom: 0; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: box-shadow 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; background-color: #fff; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;  }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; /*@include aspect-ratio(4,3);*/ height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+                .tag { position: absolute; top: 16px; left: 16px; font-size: 12px; color: #212121; background: rgba(#E4EBF5,0.9); width: max-content; height: 26px; line-height: 26px; padding: 0 8px; border-radius: 13px; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 28px 16px; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; 
+                .title { padding-bottom: 48px; }
+                .date { font-size: 14px; }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+.cards_home-initiatives { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; 
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 50%; max-width: 50%; }
+        @include respond-to(desktop-1024) { flex: 0 0 25%; max-width: 25%; }
+        .card-body { display: flex; flex-direction: column; justify-content: space-between; position: relative; background: #fff; height: 352px; transition: all 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; height: 100%; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out;
+                    &::before { content: ""; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background: linear-gradient(0deg, #252B33 0%, rgba(37, 43, 51, 0) 100%); background-image: linear-gradient(rgba(37, 43, 51, 0) 50%, #252B33 100%); }
+                }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; position: relative; width: 100%; height: 100%; padding: 20px 16px; 
+                .tag { font-size: 12px; color: #212121; background: rgba(#E4EBF5,0.9); width: max-content; height: 26px; line-height: 26px; padding: 0 8px; border-radius: 13px; }
+                .title { position: relative; width: 100%; font-size: 16px; color: #fff; transition: all 0.2s ease-out; }
+            }
+            &:hover .img { transform: scale(1.08); transition: all 0.2s ease-out; }
+            // &:hover .info .title { padding-bottom: 8px; transition: all 0.2s ease-out; }
+        }
+    }
+}
+
+.cards_home-events { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; 
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 50%; max-width: 50%; margin-bottom: 0;
+            &:last-child { display: none; }
+        }
+        @include respond-to(desktop-1024) { flex: 1; flex-grow: 1; max-width: 50%;
+            &:last-child { display: block; }
+        }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: all 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+                .tag { position: absolute; top: 20px; left: 20px; font-size: 12px; color: #212121; background: rgba(#E4EBF5,0.9); width: max-content; height: 26px; line-height: 26px; padding: 0 8px; border-radius: 13px; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8;
+                & > div { padding: 24px 20px 32px; } 
+                .date { color: #F18A21; padding-bottom: 12px; }
+                h5 { line-height: 1.4; }
+                .type-location { display: flex; justify-content: space-between; position: relative; border-top: 1px solid rgba(#E8E8E8,.8); width: 100%; width: 100%; padding: 22px 20px; font-size: 14px; font-weight: 400;  
+                    .type { padding-right: 12px; color: #00518A; }
+                    .location { opacity: .8; text-align: right; }
+                }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.12); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+/* FOCUS AREA CARDS FOUND IN INDEX AND ABOUT PAGES */
+
+.cards_focus-areas { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; 
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 33.3%; max-width: 33.3%;
+            &:nth-child(4), &:nth-child(5), &:nth-child(6) { margin-bottom: 0; }
+        }
+        .card-body { display: flex; flex-direction: column; justify-content: space-between; position: relative; background: #fff; height: 100%; border: 1px solid #E8E8E8; box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05); transition: all 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .icon { display: flex; justify-content: center; align-items: center; position: relative; width: 50%; @include aspect-ratio(1,1); border-radius: 50%; margin: 36px auto 0; transition: all 0.2s ease-out;
+                img { position: absolute; margin: 0 auto; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; width: 100%; padding: 32px 24px;
+                .title { font-weight: 600; }
+                .description { font-size: 14px; line-height: 24px; padding-top: 12px; }
+            }
+            // &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.12); }
+            &:hover .icon { transform: scale(.9); transition: all 0.2s ease-out; }
+        }
+        .focus-area-battery-safety { $brand-color: #007584; 
+            .title { color: $brand-color; }
+            .icon { background: rgba($brand-color, .15); 
+                img { max-width: 40px; }
+            }
+        }
+        .focus-area-chemical-insights { $brand-color: #47993D; 
+            .title { color: $brand-color; }
+            .icon { background: rgba(#92C83E, .15); 
+                img { max-width: 68px; }
+            }
+        }
+        .focus-area-data-science { $brand-color: #F18A21; 
+            .title { color: $brand-color; }
+            .icon { background: rgba(#CE8722, .15); 
+                img { max-width: 46px; }
+            }
+        }
+        .focus-area-education-outreach { $brand-color: #C85522; 
+            .title { color: $brand-color; }
+            .icon { background: rgba(#CB5318, .15); 
+                img { max-width: 70px; }
+            }
+        }
+        .focus-area-fire-safety { $brand-color: #C02032; 
+            .title { color: $brand-color; }
+            .icon { background: rgba($brand-color, .15); 
+                img { max-width: 60px; }
+            }
+        }
+        .focus-area-standards { $brand-color: #00518A; 
+            .title { color: $brand-color; }
+            .icon { background: rgba(#67B1E2, .15); 
+                img { max-width: 60px; }
+            }
+        }
+    }
+}
+
+/* LEADERSHIP CARDS FOUND IN ABOUT PAGE ONLY */
+
+.about-executive-leaderhip {
+    .card-feature { display: flex; flex-direction: column; justify-content: space-between; padding-top: 32px;
+        @include respond-to(tablet) { flex-direction: row; padding-top: 48px; }
+        .img-wrapper { position: relative; vertical-align: top;
+            @include respond-to(tablet) { width: 48%; }
+            img { width: 100%; height: auto; }
+         }
+         .info { padding-top: 16px;
+            @include respond-to(tablet) { width: 48%; padding-top: 0; }
+            h2 { font-weight: 400; }
+            .position { padding: 16px 0 32px; }
+            p { font-size: 16px; }
+            p:last-child { color: #374046; line-height: 1.5; }
+         }
+    }
+    .cards_executive-leadership { display: flex; flex-wrap: wrap; position: relative; margin-left: -24px; margin-right: -24px; padding-top: 48px;
+        .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 24px; padding-right: 24px; margin-bottom: 48px;
+            @include respond-to(tablet) { flex: 0 0 33.3%; max-width: 33.3%;
+                &:nth-child(3n+1):nth-last-child(-n+3),
+                &:nth-child(3n+1):nth-last-child(-n+3) ~ .card {
+                /*background-color: red;*/
+                margin-bottom: 0;
+                }
+            }
+            &:last-child { margin-bottom: 0; }
+            .card-body { display: flex; flex-direction: column; position: relative; height: 100%; overflow: hidden; 
+                .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; overflow: hidden;
+                    img { width: 100%; height: auto; }
+                }
+                .info { display: flex; flex-direction: column; width: 100%; padding: 12px 0 0;
+                    p { font-size: 14px; color: #4B555D; padding: 8px 0 0; }
+                }
+            }
+        }
+    }
+}
+
+.about-board-of-trustees {
+    .card-featured { display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 100%; padding-top: 32px;
+        @include respond-to(tablet) { padding-top: 48px; flex-direction: row; }
+        .card { position: relative; 
+            @include respond-to(tablet) { width: 48%; }
+            .img-wrapper { position: relative; width: 100%; vertical-align: top;
+                img { width: 100%; height: auto; }
+            }
+            .info { padding-top: 16px;
+                h3 { font-weight: 400; padding-bottom: 8px; }
+                p { font-size: 16px; color: #374046; line-height: 1.5; }
+            }
+            &:first-child { margin-bottom: 48px;
+                @include respond-to(tablet) { margin-bottom: 0; }
+            }
+        }
+    }
+    .cards_board-of-trustees { display: flex; flex-wrap: wrap; position: relative; margin-left: -24px; margin-right: -24px; padding-top: 56px;
+        .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 24px; padding-right: 24px; margin-bottom: 48px;
+            @include respond-to(tablet) { flex: 0 0 25%; max-width: 25%; }
+            .card-body { display: flex; flex-direction: column; position: relative; height: 100%; overflow: hidden; 
+                .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; overflow: hidden;
+                    img { width: 100%; height: auto; }
+                }
+                .info { display: flex; flex-direction: column; width: 100%; padding: 12px 0 0;
+                    p { font-size: 14px; color: #4B555D; padding: 8px 0 0 }
+                }
+            }
+        }
+    }
+}
+
+/* CARDS FOUND IN FOCUS AREA LANDING PAGES */
+
+.cards_focus-area-latest-news { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px;
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 50%; max-width: 50%; }
+        @include respond-to(desktop-1024) { flex: 1; flex-grow: 1; max-width: 50%; margin-bottom: 0; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: box-shadow 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; background-color: #fff; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;  }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; /*@include aspect-ratio(4,3);*/ height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 28px 16px; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; /*min-height: 236px;*/
+                .category { font-size: 12px; color: #00518A; text-transform: uppercase; padding-bottom: 20px; }
+                .date { font-size: 14px; padding-top: 48px; }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+.cards_focus-areas-overview { position: relative; width: 100%;
+    .card { display: flex; flex-direction: column; justify-content: space-between; width: 100%; padding-bottom: 48px;
+        @include respond-to(tablet) { flex-direction: row; padding-bottom: 136px;
+            &:nth-child(even) { flex-direction: row-reverse; }
+        }
+        &:first-child { padding-top: 12px; }
+        &:last-child { padding-bottom: 24px; }
+        .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; overflow: hidden;
+            @include respond-to(tablet) { width: 48%; }
+            img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+            .img { position: relative; top: 0px; left: 0px; width: 100%; height: 280px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center;
+                @include respond-to(tablet) { height: 368px; }
+            }
+        }
+        .info { position: relative; display: flex; flex-direction: column; align-items: flex-start;
+            @include respond-to(tablet) { width: 40%; }
+            .theme { font-size: 16px; font-weight: 700; color: #4A4A4A; line-height: 32px; background: rgba(#67B1E2,.10); padding: 0 8px; margin-top: 24px; 
+                @include respond-to(tablet) { margin-top: 16px; }
+                @include respond-to(desktop-1024) { width: max-content; }
+                &.blue { background: rgba(#67B1E2,.1); }
+                &.red { background: rgba(192,32,50,.1); }
+                &.orange { background: rgba(#F18A21, .1); }
+                &.green { background: rgba(#92C83E, .13); }
+            }
+            h3 { width: 100%; padding-top: 20px; }
+            .description { width: 100%; font-size: 16px; line-height: 28px; color: #4A4A4A; padding-top: 16px; 
+                ul { margin-left: 18px;
+                    li { list-style: disc; }
+                }
+            }
+        }
+    }
+}
+
+.cards_focus-areas-how-we-help { position: relative; width: 100%;
+    .card { display: flex; flex-direction: column; justify-content: space-between; width: 100%; padding-bottom: 48px;
+        @include respond-to(tablet) { flex-direction: row; padding-bottom: 136px; 
+            &:nth-child(even) { flex-direction: row-reverse; }
+        }
+        &:first-child { padding-top: 12px; }
+        &:last-child { padding-bottom: 24px; }
+        .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; overflow: hidden;
+            @include respond-to(tablet) { width: 48%; }
+            img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+            .img { position: relative; top: 0px; left: 0px; width: 100%; height: 280px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center;
+                @include respond-to(tablet) { height: 368px; }
+            }
+        }
+        .info { position: relative; display: flex; flex-direction: column; align-items: flex-start;
+            @include respond-to(tablet) { width: 40%; }
+            .theme { font-size: 16px; font-weight: 700; color: #4A4A4A; line-height: 32px; background: rgba(#67B1E2,.10); padding: 0 8px; margin-top: 24px; 
+                @include respond-to(tablet) { margin-top: 16px; }
+                @include respond-to(desktop-1024) { width: max-content; }
+                &.blue { background: rgba(#67B1E2,.1); }
+                &.red { background: rgba(192,32,50,.1); }
+                &.orange { background: rgba(#F18A21, .1); }
+                &.green { background: rgba(#92C83E, .13); }
+            }
+            h3 { width: 100%; padding-top: 20px; }
+            .description { width: 100%; font-size: 16px; line-height: 28px; color: #4A4A4A; padding-top: 16px; padding-bottom: 24px;
+                ul { margin-left: 18px;
+                    li { list-style: disc; }
+                }
+            }
+            a { padding: 0 16px; height: 38px; display: inline-flex; justify-content: center; align-items: center; background: #fff; border: 1px solid #AEAEAE; border-radius: 6px; font-size: 14px; 
+                &:link, &:visited, &:active { color: inherit; }
+                &:hover { color: $primary-color; border: 1px solid #C02032; }
+            }
+        }
+    }
+}
+
+.cards_focus-area-initiative-updates { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px;
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 1; flex-grow: 1; max-width: 50%; margin-bottom: 0; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: box-shadow 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; background-color: #fff; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;  }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 28px 16px; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8;
+                .description { font-size: 14px; padding-top: 16px; }
+                .date { font-size: 14px; padding-top: 24px; }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+.cards_explore-links { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; max-width: 1176px;
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 33.3%; max-width: 33.3%; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; border: 1px solid #E8E8E8; height: 100%; overflow: hidden; 
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 32px 24px;
+                img { width: 100%; height: auto; max-width: 18px; }
+                .external-url { position: relative; font-size: 16px; padding-top: 12px; padding-right: 32px; cursor: pointer;
+                    a { text-decoration: underline;
+                        &:link, &:visited, &:active { color: inherit; }
+                        &:after { content: ''; position: absolute; background: url(../app/creative/icon-external-link-red.png); background-size: contain; background-repeat: no-repeat; width: 10px; height: 10px; margin: 6px 0 0 8px; filter: grayscale(1); }
+                        &:hover { color: $primary-color; 
+                            &:after { filter: grayscale(0); }
+                        }
+                    }
+                }
+                .description { font-size: 14px; line-height: 21px; padding-top: 28px; }
+            }
+        }
+    }
+}
+
+/* HOW WE HELP GALLERY STYLE CARD FOUND IN FOCUS AREA HOW WE HELP PAGE */
+
+.cards_focus-areas-how-we-help-gallery { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; padding: 48px 0 56px;
+    @include respond-to(tablet) { padding: 48px 16px 56px; }
+    @include respond-to(desktop-1280) { max-width: 1176px; padding: 48px 0 56px; }
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 36px;
+        @include respond-to(tablet) { flex: 0 0 50%; max-width: 50%; }
+        @include respond-to(desktop-1024) { flex: 0 0 33.3%; max-width: 33.3%; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: box-shadow 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; background-color: #fff; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;  }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 28px 24px; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8;
+                & > div { display: flex; flex-direction: column; align-items: flex-start; width: 100%; }
+                .theme { width: max-content; font-size: 12px; font-weight: 700; color: #4A4A4A; line-height: 32px; background: rgba(#67B1E2,.10); padding: 0 8px; }
+                .title { width: 100%; padding-top: 16px; }
+                .description { width: 100%; font-size: 14px; padding-top: 16px; }
+                .cta { font-size: 14px; text-decoration: underline; padding-top: 24px; }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+/* INITIATIVE GALLERY STYLE CARD FOUND IN FOCUS AREA INITIATIVES PAGE */
+
+.cards_focus-areas-initiatives-gallery { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; padding: 48px 0 56px;
+    @include respond-to(tablet) { padding: 48px 16px 56px; }
+    @include respond-to(desktop-1280) { max-width: 1176px; padding: 48px 0 56px; }
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 50%; max-width: 50%; }
+        @include respond-to(desktop-1024) { flex: 0 0 25%; max-width: 25%; }
+        .card-body { display: flex; flex-direction: column; justify-content: space-between; position: relative; background: #fff; height: 352px; transition: all 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; height: 100%; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out;
+                    &::before { content: ""; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background: linear-gradient(0deg, #252B33 0%, rgba(37, 43, 51, 0) 100%); background-image: linear-gradient(rgba(37, 43, 51, 0) 50%, #252B33 100%); }
+                }
+            }
+            .info { display: flex; flex-direction: column; justify-content: flex-end; position: relative; width: 100%; height: 100%; padding: 20px 16px; 
+                .title { font-size: 16px; color: #fff; transition: all 0.2s ease-out; }
+            }
+            &:hover .img { transform: scale(1.08); transition: all 0.2s ease-out; }
+        }
+    }
+}
+
+/* GALLERY STYLE CARDS */
+
+.cards_library-gallery { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; max-width: 1176px; padding: 48px 0 56px;
+    @include respond-to(tablet) { padding: 48px 16px 56px; }
+    @include respond-to(desktop-1280) { padding: 48px 0 56px; }
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 33.3%; max-width: 33.3%; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: box-shadow 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; background-color: #fff; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;  }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; /*@include aspect-ratio(4,3);*/ height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+                .tag { position: absolute; top: 16px; left: 16px; font-size: 12px; color: #212121; background: rgba(#E4EBF5,0.9); width: max-content; height: 26px; line-height: 26px; padding: 0 8px; border-radius: 13px; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 28px 16px 40px; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; /*min-height: 236px;*/
+                .category { font-size: 12px; color: #00518A; text-transform: uppercase; padding-bottom: 20px; }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+.cards_news-gallery { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; max-width: 1176px; padding: 48px 0 56px;
+    @include respond-to(tablet) { padding: 48px 16px 56px; }
+    @include respond-to(desktop-1280) { padding: 48px 0 56px; }
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 33.3%; max-width: 33.3%; }
+        @include respond-to(desktop-1024) { flex: 0 0 25%; max-width: 25%; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: box-shadow 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; background-color: #fff; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; /*@include aspect-ratio(4,3);*/ height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+                .tag { position: absolute; top: 16px; left: 16px; font-size: 12px; color: #212121; background: rgba(#E4EBF5,0.9); width: max-content; height: 26px; line-height: 26px; padding: 0 8px; border-radius: 13px; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 28px 16px; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; /*min-height: 236px;*/
+                .category { font-size: 12px; color: #00518A; text-transform: uppercase; padding-bottom: 20px; }
+                .date { font-size: 14px; padding-top: 48px; }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+.card_focus-area-battery-safety {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-battery-safety.svg) no-repeat; background-size: 16%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+    .img { background: none !important; }
+}
+
+.card_focus-area-chemical-insights {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-chemical-insights.svg) no-repeat; background-size: 29%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+    .img { background: none !important; }
+}
+
+.card_focus-area-data-science {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-data-science.svg) no-repeat; background-size: 19%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+    .img { background: none !important; }
+}
+
+.card_focus-area-education-outreach {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-education-outreach.svg) no-repeat; background-size: 35%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+    .img { background: none !important; }
+}
+
+.card_focus-area-fire-safety {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-fire-safety.svg) no-repeat; background-size: 22%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+    .img { background: none !important; }
+}
+
+.card_focus-area-standards {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-standards.svg) no-repeat; background-size: 26%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+    .img { background: none !important; }
+}
+
+.cards_events-gallery { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; max-width: 1176px; padding: 48px 0 56px;
+    @include respond-to(tablet) { padding: 48px 16px 56px; }
+    @include respond-to(desktop-1280) { padding: 48px 0 56px; }
+    .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
+        @include respond-to(tablet) { flex: 0 0 50%; max-width: 50%; }
+        @include respond-to(desktop-1024) { flex: 0 0 33.3%; max-width: 33.3%; }
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; height: 100%; overflow: hidden; transition: all 0.2s ease-out; 
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
+            .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; overflow: hidden;
+                img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out;  }
+                .tag { position: absolute; top: 20px; left: 20px; font-size: 12px; color: #212121; background: rgba(#E4EBF5,0.9); width: max-content; height: 26px; line-height: 26px; padding: 0 8px; border-radius: 13px; }
+            }
+            .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8;
+                & > div { padding: 24px 20px 32px; } 
+                .date { color: #F18A21; padding-bottom: 12px; }
+                h5 { line-height: 1.4; }
+                .type-location { display: flex; justify-content: space-between; position: relative; border-top: 1px solid rgba(#E8E8E8,.8); width: 100%; width: 100%; padding: 22px 20px; font-size: 14px; font-weight: 400;  
+                    .type { padding-right: 12px; color: #00518A; }
+                    .location { opacity: .8; text-align: right; }
+                }
+            }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.12); }
+            &:hover .img { transform: scale(1.08); }
+        }
+    }
+}
+
+/* REMOVE TAG ON NEWS AND EVENTS CARDS WHEN PAGE IS ASSOCIATED TO A FOCUS AREA LANDING PAGE PATH */
+
+.path-focus-area {
+    .cards_library-gallery, .cards_news-gallery, .cards_events-gallery {
+        .img-wrapper .tag { display: none;}
+    }
+}
+
+/* CARD DETAIL */
+
+.card_detail { position: relative;
+    .theme { width: max-content; font-size: 12px; font-weight: 700; color: #4A4A4A; line-height: 32px; background: rgba(#67B1E2,.10); padding: 0 8px; margin-bottom: 24px;
+        @include respond-to(tablet) { margin-bottom: 32px; }
+        &.blue { background: rgba(#67B1E2,.1); }
+        &.red { background: rgba(192,32,50,.1); }
+        &.orange { background: rgba(#F18A21, .1); }
+        &.green { background: rgba(#92C83E, .13); }
+    }
+    h1 { font-size: 32px; line-height: 1.35; font-weight: 400;
+        @include respond-to(tablet) { font-size: 48px; }
+    }
+    h2 { font-size: 24px; font-weight: 400; padding-bottom: 24px;
+        @include respond-to(tablet) { font-size: 36px; padding-bottom: 32px; }
+    }
+    h4 { font-size: 18px; line-height: 26px; padding-top: 24px; 
+        @include respond-to(tablet) { font-size: 21px; line-height: 28px; padding-top: 32px; }
+    }
+    p { font-size: 16px; line-height: 28px; padding-bottom: 24px; 
+        @include respond-to(tablet) { font-size: 18px; line-height: 32px; padding-bottom: 32px; }
+        &:last-child { padding-bottom: 0; }
+    }
+    hr { border: 0; background: #E8E8E8; margin: 36px 0; width: 100%; height: 1px;
+        @include respond-to(tablet) { margin: 44px 0; }
+    }
+    .category { font-size: 12px; font-weight: 600; text-transform: uppercase; padding-top: 32px;
+        ul { line-height: 1;
+            li { display: inline-block; 
+                a { color: #00518A;
+                    &:link, &:visited, &:active { color: #00518A; }
+                    &:hover { color: darken(#00518A, 8%); }
+                }
+                + li { padding-left: 6px; margin-left: 4px; border-left: 1px solid #00518A; }
+            }
+        }
+    }
+    img { width: 100%; height: auto; margin-bottom: 32px; }
+    &-body {
+        a { color: $primary-color; 
+            &:link, &:visited, &:active { color: $primary-color; }
+            &:hover { color: $primary-color; text-decoration: underline; }
+        }
+        ul { margin-left: 19px;
+            li { list-style: disc; line-height: 32px; padding-bottom: 32px; }
+        }
+        iframe { width: 100%; }
+    }
+}
