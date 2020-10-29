@@ -2199,10 +2199,6 @@ section {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: #E8ECF1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .hero_img-gradient::before {
@@ -2213,6 +2209,14 @@ section {
   bottom: 0px;
   left: 0px;
   background-image: linear-gradient(179deg, rgba(33, 33, 33, 0) 40%, #212121 100%);
+}
+
+.hero_img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero_page-summary {
@@ -2598,36 +2602,16 @@ section {
   position: relative;
   width: 100%;
   height: 264px;
-}
-
-.site-introduction_media .slick-slider .slider-content .grey {
   background: #E8ECF1;
+  overflow: hidden;
 }
 
-.site-introduction_media .slick-slider .slider-content .tomato {
-  background: tomato;
-}
-
-.site-introduction_media .slick-slider .slider-content .blue {
-  background: blue;
-}
-
-.site-introduction_media .slick-slider .slider-content .img1 {
-  background: url(../app/creative/images/slider-media-img-1.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.site-introduction_media .slick-slider .slider-content .img2 {
-  background: url(../app/creative/images/slider-media-img-2.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.site-introduction_media .slick-slider .slider-content .img3 {
-  background: url(../app/creative/images/slider-media-img-3.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
+.site-introduction_media .slick-slider .slider-content .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .site-introduction_media .slick-slider .slider-content .caption {
@@ -3296,7 +3280,6 @@ section {
 
 @media (min-width: 1024px) {
   .cards_home-latest-news .card {
-    /*flex: 0 0 25%;*/
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -3346,29 +3329,23 @@ section {
   overflow: hidden;
 }
 
-.cards_home-latest-news .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_home-latest-news .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_home-latest-news .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_home-latest-news .card .card-body .img-wrapper .tag {
@@ -3505,27 +3482,13 @@ section {
   overflow: hidden;
 }
 
-.cards_home-initiatives .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_home-initiatives .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -3541,6 +3504,14 @@ section {
   background: linear-gradient(0deg, #252B33 0%, rgba(37, 43, 51, 0) 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(37, 43, 51, 0)), to(#252B33));
   background-image: linear-gradient(rgba(37, 43, 51, 0) 50%, #252B33 100%);
+}
+
+.cards_home-initiatives .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_home-initiatives .card .card-body .info {
@@ -3677,29 +3648,23 @@ section {
   overflow: hidden;
 }
 
-.cards_home-events .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_home-events .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_home-events .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_home-events .card .card-body .img-wrapper .tag {
@@ -3887,6 +3852,8 @@ section {
 
 .cards_focus-areas .card .card-body .icon img {
   position: absolute;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   top: 50%;
   left: 50%;
@@ -4104,7 +4071,6 @@ section {
   }
   .about-executive-leaderhip .cards_executive-leadership .card:nth-child(3n+1):nth-last-child(-n+3),
   .about-executive-leaderhip .cards_executive-leadership .card:nth-child(3n+1):nth-last-child(-n+3) ~ .card {
-    /*background-color: red;*/
     margin-bottom: 0;
   }
 }
@@ -4388,30 +4354,23 @@ section {
   overflow: hidden;
 }
 
-.cards_focus-area-latest-news .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_focus-area-latest-news .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  /*@include aspect-ratio(4,3);*/
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_focus-area-latest-news .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_focus-area-latest-news .card .card-body .info {
@@ -4433,7 +4392,6 @@ section {
   border-right: 1px solid #E8E8E8;
   border-bottom: 1px solid #E8E8E8;
   border-left: 1px solid #E8E8E8;
-  /*min-height: 236px;*/
 }
 
 .cards_focus-area-latest-news .card .card-body .info .category {
@@ -4516,33 +4474,27 @@ section {
   }
 }
 
-.cards_focus-areas-overview .card .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_focus-areas-overview .card .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 280px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .cards_focus-areas-overview .card .img-wrapper .img {
     height: 368px;
   }
+}
+
+.cards_focus-areas-overview .card .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_focus-areas-overview .card .info {
@@ -4684,33 +4636,27 @@ section {
   }
 }
 
-.cards_focus-areas-how-we-help .card .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_focus-areas-how-we-help .card .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 280px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .cards_focus-areas-how-we-help .card .img-wrapper .img {
     height: 368px;
   }
+}
+
+.cards_focus-areas-how-we-help .card .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_focus-areas-how-we-help .card .info {
@@ -4896,29 +4842,23 @@ section {
   overflow: hidden;
 }
 
-.cards_focus-area-initiative-updates .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_focus-area-initiative-updates .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_focus-area-initiative-updates .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_focus-area-initiative-updates .card .card-body .info {
@@ -5173,29 +5113,23 @@ section {
   overflow: hidden;
 }
 
-.cards_focus-areas-how-we-help-gallery .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_focus-areas-how-we-help-gallery .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_focus-areas-how-we-help-gallery .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_focus-areas-how-we-help-gallery .card .card-body .info {
@@ -5367,27 +5301,13 @@ section {
   overflow: hidden;
 }
 
-.cards_focus-areas-initiatives-gallery .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_focus-areas-initiatives-gallery .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -5403,6 +5323,14 @@ section {
   background: linear-gradient(0deg, #252B33 0%, rgba(37, 43, 51, 0) 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(37, 43, 51, 0)), to(#252B33));
   background-image: linear-gradient(rgba(37, 43, 51, 0) 50%, #252B33 100%);
+}
+
+.cards_focus-areas-initiatives-gallery .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_focus-areas-initiatives-gallery .card .card-body .info {
@@ -5522,30 +5450,23 @@ section {
   overflow: hidden;
 }
 
-.cards_library-gallery .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_library-gallery .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  /*@include aspect-ratio(4,3);*/
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_library-gallery .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_library-gallery .card .card-body .img-wrapper .tag {
@@ -5583,7 +5504,6 @@ section {
   border-right: 1px solid #E8E8E8;
   border-bottom: 1px solid #E8E8E8;
   border-left: 1px solid #E8E8E8;
-  /*min-height: 236px;*/
 }
 
 .cards_library-gallery .card .card-body .info .category {
@@ -5697,30 +5617,23 @@ section {
   overflow: hidden;
 }
 
-.cards_news-gallery .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_news-gallery .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  /*@include aspect-ratio(4,3);*/
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_news-gallery .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_news-gallery .card .card-body .img-wrapper .tag {
@@ -5758,7 +5671,6 @@ section {
   border-right: 1px solid #E8E8E8;
   border-bottom: 1px solid #E8E8E8;
   border-left: 1px solid #E8E8E8;
-  /*min-height: 236px;*/
 }
 
 .cards_news-gallery .card .card-body .info .category {
@@ -5874,29 +5786,23 @@ section {
   overflow: hidden;
 }
 
-.cards_events-gallery .card .card-body .img-wrapper img {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 .cards_events-gallery .card .card-body .img-wrapper .img {
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 196px;
-  background: url(../app/creative/test.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.cards_events-gallery .card .card-body .img-wrapper .img img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards_events-gallery .card .card-body .img-wrapper .tag {

@@ -1,9 +1,10 @@
 .hero { position: relative; width: 100%; height: 360px; margin-top: 60px;
     @include respond-to(tablet) { height: 440px; }  
-    &_img { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: $cloud-grey-color; background-repeat: no-repeat; background-size: cover; background-position: center center; 
+    &_img { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; 
         &-gradient {
             &::before { content: ""; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background-image: linear-gradient(179deg, rgba(33,33,33,0.00) 40%, #212121 100%); }
         }
+        img { width: 100%; height: auto; height: 100%; object-fit: cover; }
     }
     &_page-summary { display: flex; flex-direction: column; justify-content: flex-end; position: relative; width: 100%; height: 100%; max-width: 1144px; padding: 0 20px 24px; margin: 0 auto; color: #fff;
         @include respond-to(tablet) { padding: 0 32px 44px; }

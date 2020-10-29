@@ -16,13 +16,9 @@
         .slick-slider { padding-top: 40px;
             @include respond-to(tablet) { padding-top: 48px; }
             .slider-content { position: relative; width: 100%; padding: 0;
-                .img { position: relative; width: 100%; height: 264px; }
-                .grey { background: $cloud-grey-color; }
-                .tomato { background: tomato; }
-                .blue { background: blue; }
-                .img1 { background: url(../app/creative/images/slider-media-img-1.jpg) no-repeat; background-size: cover; background-position: center center; }
-                .img2 { background: url(../app/creative/images/slider-media-img-2.jpg) no-repeat; background-size: cover; background-position: center center; }
-                .img3 { background: url(../app/creative/images/slider-media-img-3.jpg) no-repeat; background-size: cover; background-position: center center; }
+                .img { position: relative; width: 100%; height: 264px; background: $cloud-grey-color; overflow: hidden; 
+                    img { width: 100%; height: auto; height: 100%; object-fit: cover; }
+                }
                 .caption { position: relative; font-size: 14px; line-height: 21px; padding-top: 16px;
                     &:after { content: ''; position: absolute; background: url(../app/creative/caption-caret-blue.png); background-size: contain; background-repeat: no-repeat; width: 9px; height: 8px; margin: 9px 0 0 8px; }
                 }
