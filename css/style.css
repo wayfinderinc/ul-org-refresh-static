@@ -485,6 +485,18 @@ header .desktop-nav .primary-navigation ul.secondary-menu li {
   display: none;
 }
 
+header .desktop-nav .primary-navigation ul.secondary-menu li a {
+  color: #212121;
+}
+
+header .desktop-nav .primary-navigation ul.secondary-menu li a:link, header .desktop-nav .primary-navigation ul.secondary-menu li a:visited, header .desktop-nav .primary-navigation ul.secondary-menu li a:active {
+  color: #212121;
+}
+
+header .desktop-nav .primary-navigation ul.secondary-menu li a:hover {
+  color: #212121;
+}
+
 header .desktop-nav .primary-navigation ul.secondary-menu li.active {
   display: block;
 }
@@ -840,6 +852,7 @@ header .mobile-nav .nav-menu .secondary-navigation ul li:hover .caret {
           filter: grayscale(0);
 }
 
+/* NODE PATH FOR ANY FOCUS AREA WILL TELL IT TO USE THE SECONDARY MENU */
 .path-focus-area header .desktop-nav .primary-navigation ul.primary-menu {
   display: none;
 }
@@ -1424,6 +1437,13 @@ h3 {
 
 h4 {
   font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -3342,7 +3362,6 @@ section {
   top: 0px;
   left: 0px;
   width: 100%;
-  /*@include aspect-ratio(4,3);*/
   height: 196px;
   background: url(../app/creative/test.png);
   background-size: cover;
@@ -3726,10 +3745,6 @@ section {
 .cards_home-events .card .card-body .info .date {
   color: #F18A21;
   padding-bottom: 12px;
-}
-
-.cards_home-events .card .card-body .info h5 {
-  line-height: 1.4;
 }
 
 .cards_home-events .card .card-body .info .type-location {
@@ -5768,102 +5783,6 @@ section {
           transform: scale(1.08);
 }
 
-.card_focus-area-battery-safety .focus-area-img {
-  position: absolute;
-  background: url(../app/creative/icon-battery-safety.svg) no-repeat;
-  background-size: 16%;
-  background-position: center 64%;
-  width: 100%;
-  height: 196px;
-  top: 0px;
-  left: 0px;
-  border: 1px solid #E4EBF5;
-}
-
-.card_focus-area-battery-safety .img {
-  background: none !important;
-}
-
-.card_focus-area-chemical-insights .focus-area-img {
-  position: absolute;
-  background: url(../app/creative/icon-chemical-insights.svg) no-repeat;
-  background-size: 29%;
-  background-position: center 64%;
-  width: 100%;
-  height: 196px;
-  top: 0px;
-  left: 0px;
-  border: 1px solid #E4EBF5;
-}
-
-.card_focus-area-chemical-insights .img {
-  background: none !important;
-}
-
-.card_focus-area-data-science .focus-area-img {
-  position: absolute;
-  background: url(../app/creative/icon-data-science.svg) no-repeat;
-  background-size: 19%;
-  background-position: center 64%;
-  width: 100%;
-  height: 196px;
-  top: 0px;
-  left: 0px;
-  border: 1px solid #E4EBF5;
-}
-
-.card_focus-area-data-science .img {
-  background: none !important;
-}
-
-.card_focus-area-education-outreach .focus-area-img {
-  position: absolute;
-  background: url(../app/creative/icon-education-outreach.svg) no-repeat;
-  background-size: 35%;
-  background-position: center 64%;
-  width: 100%;
-  height: 196px;
-  top: 0px;
-  left: 0px;
-  border: 1px solid #E4EBF5;
-}
-
-.card_focus-area-education-outreach .img {
-  background: none !important;
-}
-
-.card_focus-area-fire-safety .focus-area-img {
-  position: absolute;
-  background: url(../app/creative/icon-fire-safety.svg) no-repeat;
-  background-size: 22%;
-  background-position: center 64%;
-  width: 100%;
-  height: 196px;
-  top: 0px;
-  left: 0px;
-  border: 1px solid #E4EBF5;
-}
-
-.card_focus-area-fire-safety .img {
-  background: none !important;
-}
-
-.card_focus-area-standards .focus-area-img {
-  position: absolute;
-  background: url(../app/creative/icon-standards.svg) no-repeat;
-  background-size: 26%;
-  background-position: center 64%;
-  width: 100%;
-  height: 196px;
-  top: 0px;
-  left: 0px;
-  border: 1px solid #E4EBF5;
-}
-
-.card_focus-area-standards .img {
-  background: none !important;
-}
-
 .cards_events-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6025,10 +5944,6 @@ section {
   padding-bottom: 12px;
 }
 
-.cards_events-gallery .card .card-body .info h5 {
-  line-height: 1.4;
-}
-
 .cards_events-gallery .card .card-body .info .type-location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6065,9 +5980,87 @@ section {
           transform: scale(1.08);
 }
 
+/* DEFAULT IMAGES FOR ALL CARDS */
+.card_focus-area-battery-safety .focus-area-img {
+  position: absolute;
+  background: url(../app/creative/icon-battery-safety.svg) no-repeat;
+  background-size: 16%;
+  background-position: center 64%;
+  width: 100%;
+  height: 196px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #E4EBF5;
+}
+
+.card_focus-area-chemical-insights .focus-area-img {
+  position: absolute;
+  background: url(../app/creative/icon-chemical-insights.svg) no-repeat;
+  background-size: 29%;
+  background-position: center 64%;
+  width: 100%;
+  height: 196px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #E4EBF5;
+}
+
+.card_focus-area-data-science .focus-area-img {
+  position: absolute;
+  background: url(../app/creative/icon-data-science.svg) no-repeat;
+  background-size: 19%;
+  background-position: center 64%;
+  width: 100%;
+  height: 196px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #E4EBF5;
+}
+
+.card_focus-area-education-outreach .focus-area-img {
+  position: absolute;
+  background: url(../app/creative/icon-education-outreach.svg) no-repeat;
+  background-size: 35%;
+  background-position: center 64%;
+  width: 100%;
+  height: 196px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #E4EBF5;
+}
+
+.card_focus-area-fire-safety .focus-area-img {
+  position: absolute;
+  background: url(../app/creative/icon-fire-safety.svg) no-repeat;
+  background-size: 22%;
+  background-position: center 64%;
+  width: 100%;
+  height: 196px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #E4EBF5;
+}
+
+.card_focus-area-standards .focus-area-img {
+  position: absolute;
+  background: url(../app/creative/icon-standards.svg) no-repeat;
+  background-size: 26%;
+  background-position: center 64%;
+  width: 100%;
+  height: 196px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #E4EBF5;
+}
+
 /* REMOVE TAG ON NEWS AND EVENTS CARDS WHEN PAGE IS ASSOCIATED TO A FOCUS AREA LANDING PAGE PATH */
+/* CENTER FOCUS AREA ICONS ON INITITIATIVE UPDATE CARDS WHEN ASSOCIATED TO FOCUS AREA PAGE NODE */
 .path-focus-area .cards_library-gallery .img-wrapper .tag, .path-focus-area .cards_news-gallery .img-wrapper .tag, .path-focus-area .cards_events-gallery .img-wrapper .tag {
   display: none;
+}
+
+.path-focus-area .card_focus-area-battery-safety .focus-area-img, .path-focus-area .card_focus-area-chemical-insights .focus-area-img, .path-focus-area .card_focus-area-data-science .focus-area-img, .path-focus-area .card_focus-area-education-outreach .focus-area-img, .path-focus-area .card_focus-area-fire-safety .focus-area-img, .path-focus-area .card_focus-area-standards .focus-area-img {
+  background-position: center center;
 }
 
 /* CARD DETAIL */

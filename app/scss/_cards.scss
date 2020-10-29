@@ -8,7 +8,7 @@
             a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
             .img-wrapper { position: relative; width: 100%; height: auto; vertical-align: top; background-color: #fff; overflow: hidden;
                 img { border: 0; clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;  }
-                .img { position: relative; top: 0px; left: 0px; width: 100%; /*@include aspect-ratio(4,3);*/ height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
+                .img { position: relative; top: 0px; left: 0px; width: 100%; height: 196px; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; transition: all 0.2s ease-out; }
                 .tag { position: absolute; top: 16px; left: 16px; font-size: 12px; color: #212121; background: rgba(#E4EBF5,0.9); width: max-content; height: 26px; line-height: 26px; padding: 0 8px; border-radius: 13px; }
             }
             .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 28px 16px; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; 
@@ -61,7 +61,6 @@
             .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8;
                 & > div { padding: 24px 20px 32px; } 
                 .date { color: #F18A21; padding-bottom: 12px; }
-                h5 { line-height: 1.4; }
                 .type-location { display: flex; justify-content: space-between; position: relative; border-top: 1px solid rgba(#E8E8E8,.8); width: 100%; width: 100%; padding: 22px 20px; font-size: 14px; font-weight: 400;  
                     .type { padding-right: 12px; color: #00518A; }
                     .location { opacity: .8; text-align: right; }
@@ -434,36 +433,6 @@
     }
 }
 
-.card_focus-area-battery-safety {
-    .focus-area-img { position: absolute; background: url(../app/creative/icon-battery-safety.svg) no-repeat; background-size: 16%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
-    .img { background: none !important; }
-}
-
-.card_focus-area-chemical-insights {
-    .focus-area-img { position: absolute; background: url(../app/creative/icon-chemical-insights.svg) no-repeat; background-size: 29%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
-    .img { background: none !important; }
-}
-
-.card_focus-area-data-science {
-    .focus-area-img { position: absolute; background: url(../app/creative/icon-data-science.svg) no-repeat; background-size: 19%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
-    .img { background: none !important; }
-}
-
-.card_focus-area-education-outreach {
-    .focus-area-img { position: absolute; background: url(../app/creative/icon-education-outreach.svg) no-repeat; background-size: 35%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
-    .img { background: none !important; }
-}
-
-.card_focus-area-fire-safety {
-    .focus-area-img { position: absolute; background: url(../app/creative/icon-fire-safety.svg) no-repeat; background-size: 22%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
-    .img { background: none !important; }
-}
-
-.card_focus-area-standards {
-    .focus-area-img { position: absolute; background: url(../app/creative/icon-standards.svg) no-repeat; background-size: 26%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
-    .img { background: none !important; }
-}
-
 .cards_events-gallery { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; max-width: 1176px; padding: 48px 0 56px;
     @include respond-to(tablet) { padding: 48px 16px 56px; }
     @include respond-to(desktop-1280) { padding: 48px 0 56px; }
@@ -480,7 +449,6 @@
             .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8;
                 & > div { padding: 24px 20px 32px; } 
                 .date { color: #F18A21; padding-bottom: 12px; }
-                h5 { line-height: 1.4; }
                 .type-location { display: flex; justify-content: space-between; position: relative; border-top: 1px solid rgba(#E8E8E8,.8); width: 100%; width: 100%; padding: 22px 20px; font-size: 14px; font-weight: 400;  
                     .type { padding-right: 12px; color: #00518A; }
                     .location { opacity: .8; text-align: right; }
@@ -492,11 +460,41 @@
     }
 }
 
+/* DEFAULT IMAGES FOR ALL CARDS */
+
+.card_focus-area-battery-safety {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-battery-safety.svg) no-repeat; background-size: 16%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+}
+
+.card_focus-area-chemical-insights {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-chemical-insights.svg) no-repeat; background-size: 29%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+}
+
+.card_focus-area-data-science {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-data-science.svg) no-repeat; background-size: 19%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+}
+
+.card_focus-area-education-outreach {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-education-outreach.svg) no-repeat; background-size: 35%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+}
+
+.card_focus-area-fire-safety {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-fire-safety.svg) no-repeat; background-size: 22%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+}
+
+.card_focus-area-standards {
+    .focus-area-img { position: absolute; background: url(../app/creative/icon-standards.svg) no-repeat; background-size: 26%; background-position: center 64%; width: 100%; height: 196px; top: 0px; left: 0px; border: 1px solid #E4EBF5; }
+}
+
 /* REMOVE TAG ON NEWS AND EVENTS CARDS WHEN PAGE IS ASSOCIATED TO A FOCUS AREA LANDING PAGE PATH */
+/* CENTER FOCUS AREA ICONS ON INITITIATIVE UPDATE CARDS WHEN ASSOCIATED TO FOCUS AREA PAGE NODE */
 
 .path-focus-area {
     .cards_library-gallery, .cards_news-gallery, .cards_events-gallery {
-        .img-wrapper .tag { display: none;}
+        .img-wrapper .tag { display: none; }
+    }
+    .card_focus-area-battery-safety, .card_focus-area-chemical-insights, .card_focus-area-data-science, .card_focus-area-education-outreach, .card_focus-area-fire-safety, .card_focus-area-standards {
+        .focus-area-img { background-position: center center; }
     }
 }
 
@@ -516,7 +514,7 @@
     h2 { font-size: 24px; font-weight: 400; padding-bottom: 24px;
         @include respond-to(tablet) { font-size: 36px; padding-bottom: 32px; }
     }
-    h4 { font-size: 18px; line-height: 26px; padding-top: 24px; 
+    h4 { font-size: 18px; line-height: 26px; padding-top: 24px;
         @include respond-to(tablet) { font-size: 21px; line-height: 28px; padding-top: 32px; }
     }
     p { font-size: 16px; line-height: 28px; padding-bottom: 24px; 

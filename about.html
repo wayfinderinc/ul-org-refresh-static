@@ -130,12 +130,12 @@
             <li><a href="events.html">Events</a></li>
           </ul>
           <ul class="secondary-menu">
-            <li>Battery Safety</li>
-            <li>Chemical Insights</li>
-            <li>Data Science</li>
-            <li>Education and Outreach</li>
-            <li>Fire Safety</li>
-            <li>Standards</li>
+            <li><a>Battery Safety</a></li>
+            <li><a>Chemical Insights</a></li>
+            <li><a>Data Science</a></li>
+            <li><a>Education and Outreach</a></li>
+            <li><a>Fire Safety</a></li>
+            <li><a>Standards</a></li>
           </ul>
         </div>
         <div class="search-menu">
@@ -247,7 +247,7 @@
                 <img src="app/creative/icon-battery-safety.svg" width="100%" height="auto">
               </div>
               <div class="info">
-                <div class="title">Battery Safety</div>
+                <h5 class="title">Battery Safety</h5>
                 <div class="description">Investigating the limits of energy technologies to drive safer innovations and product performance.</div>
               </div>
             </a>
@@ -260,7 +260,7 @@
                 <img src="app/creative/icon-chemical-insights.svg" width="100%" height="auto">
               </div>
               <div class="info">
-                <div class="title">Chemical Insights</div>
+                <h5 class="title">Chemical Insights</h5>
                 <div class="description">Promoting human health through research and awareness of potential risks of chemical pollutants.</div>
               </div>
             </a>
@@ -273,7 +273,7 @@
                 <img src="app/creative/icon-data-science.svg" width="100%" height="auto">
               </div>
               <div class="info">
-                <div class="title">Data Science</div>
+                <h5 class="title">Data Science</h5>
                 <div class="description">Providing analytical, statistical predictive modeling to enhance strategy and research.
 
                 </div>
@@ -288,7 +288,7 @@
                 <img src="app/creative/icon-education-outreach.svg" width="100%" height="auto">
               </div>
               <div class="info">
-                <div class="title">Education and Outreach</div>
+                <h5 class="title">Education and Outreach</h5>
                 <div class="description">Developing safety, health, and sustainability education to inspire behavior change, awareness and empower positive action.</div>
               </div>
             </a>
@@ -301,7 +301,7 @@
                 <img src="app/creative/icon-fire-safety.svg" width="100%" height="auto">
               </div>
               <div class="info">
-                <div class="title">Fire Safety</div>
+                <h5 class="title">Fire Safety</h5>
                 <div class="description">Leading fire research and developing practical education to help firefighters stay safe and protect people and property.</div>
               </div>
             </a>
@@ -314,7 +314,7 @@
                 <img src="app/creative/icon-standards.svg" width="100%" height="auto">
               </div>
               <div class="info">
-                <div class="title">Standards</div>
+                <h5 class="title">Standards</h5>
                 <div class="description">Delivering standards that guide the safety, performance and sustainability or products and services worldwide.</div>
               </div>
             </a>
@@ -555,6 +555,8 @@
 
 <script type="text/javascript">
 
+  /* WHAT MAKES THE ABOUT SUB NAVIGATION WORK */
+
   const sections = [...document.querySelectorAll(".about-sections")];
   const getLinkById = (id) => document.querySelector(`a[href='#${id}']`);
 
@@ -591,7 +593,6 @@
   gsap.utils.toArray(".about-nav nav a").forEach(function(a) {
     a.addEventListener("click", function(e) {
       e.preventDefault();
-      // gsap.to(window, {duration: 1, scrollTo: e.target.getAttribute("href")});
       if ( getOS === 'mobile' ) {
         gsap.to(window, {duration: .8, scrollTo: {y: e.target.getAttribute("href"), offsetY: 112, ease:'expo.out'}});
       } else {

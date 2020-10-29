@@ -81,6 +81,10 @@ header { position: fixed; width: 100%; z-index: 999999; background:#fff; box-sha
             }
             ul.secondary-menu { display: flex; flex-direction: row; position: relative; margin: 0; padding: 0; list-style: none; margin-left: 32px; display: none;
                 li { display: none; 
+                    a { color: #212121; 
+                        &:link, &:visited, &:active { color: #212121; }
+                        &:hover { color: #212121; }
+                    }
                     &.active { display: block; }
                 }
             }
@@ -158,6 +162,7 @@ header { position: fixed; width: 100%; z-index: 999999; background:#fff; box-sha
     }
 }
 
+/* NODE PATH FOR ANY FOCUS AREA WILL TELL IT TO USE THE SECONDARY MENU */
 .path-focus-area {
     header .desktop-nav .primary-navigation ul.primary-menu { display: none; }
     header .desktop-nav .primary-navigation ul.secondary-menu { display: flex; }
