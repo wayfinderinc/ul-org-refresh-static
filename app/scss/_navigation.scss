@@ -98,7 +98,7 @@ header { position: fixed; width: 100%; z-index: 999999; background:#fff; box-sha
         .secondary-navigation { display: flex; align-items: center;
             ul { display: flex; flex-direction: row; margin: 0; padding: 0; list-style: none; font-size: 16px;
                 li { margin: 2px 40px 0 0; color: #000;
-                    &.active { border-bottom: 3px solid; }
+                    &.active { color: $primary-color; border-bottom: 3px solid $primary-color; }
                     a { color: inherit;
                         &:link, &:visited, &:active { color: inherit; }
                         &:hover { color: $primary-color; }
