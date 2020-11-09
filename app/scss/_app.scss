@@ -100,13 +100,10 @@ section { position: relative; display: flex; justify-content: center; width: 100
     }
 }
 
-.path-news {
-    .detail-page { padding-bottom: 96px; }
-}
-
-.detail-page { max-width: 864px;
-    .back-cta { position: relative; font-weight: 600; padding-bottom: 48px;
-        @include respond-to(tablet) { padding-bottom: 56px; }
+.detail-page { max-width: 864px; padding-bottom: 48px;
+    @include respond-to(tablet) { padding-bottom: 96px; }
+    .back-cta { position: relative; font-weight: 600; padding-bottom: 32px;
+        @include respond-to(tablet) { padding-bottom: 48px; }
         a { display: flex; align-items: center; padding-left: 16px; width: max-content;
             &:before { content: ''; position: absolute; width: 10px; height: 18px; background: url(../app/creative/angle-left-red.svg) no-repeat; background-size: contain; left: 0px; filter: grayscale(1); }
             &:link, &:visited, &:active { color: inherit; }
@@ -115,7 +112,7 @@ section { position: relative; display: flex; justify-content: center; width: 100
         }
     }
     nav { padding: 0 0 24px; visibility: hidden;
-        @include respond-to(tablet) { padding: 24px 0 48px; visibility: visible; }
+        @include respond-to(tablet) { padding: 24px 0 24px; visibility: visible; }
         .breadcrumb { display: flex; flex-wrap: wrap; padding: 0; margin: 0; font-size: 12px; list-style: none; background-color: transparent; border-radius: 0;
             &-item {
                 a { color: #00518A; 
@@ -142,8 +139,7 @@ section { position: relative; display: flex; justify-content: center; width: 100
         }
     }
     .social-share { font-size: 16px; padding: 40px 0 16px; }
-    .download-cta { padding-top: 8px; padding-bottom: 48px; text-align: center;
-        @include respond-to(tablet) { padding-bottom: 96px; }
+    .download-cta { padding-top: 8px; text-align: center;
         a { display: inline-block; text-align: center; white-space: nowrap; vertical-align: middle; background: #dc3545; color: #fff; line-height: 1.5; border-radius: 4px; padding: 16px 48px; text-transform: uppercase; transition: background .25s ease-out; 
             &:link, &:visited, &:active { color: #fff; }
             &:hover { background: darken(#dc3545, 8%); }
@@ -151,8 +147,8 @@ section { position: relative; display: flex; justify-content: center; width: 100
     }
 }
 
-.detail-banner { display: flex; flex-direction: column; position: relative; background: #f7f7f7;
-    @include respond-to(tablet) { flex-direction: row; }
+.detail-banner { display: flex; flex-direction: column; position: relative; background: #f7f7f7; margin-top: -48px;
+    @include respond-to(tablet) { flex-direction: row; margin-top: -96px; }
     .info { display: flex; flex-direction: column; align-items: flex-start; width: 100%; padding: 44px 36px;
         @include respond-to(tablet) { padding: 56px 56px 56px 48px; }
         .title { font-size: 24px; line-height: 34px; padding-bottom: 24px;
@@ -165,7 +161,7 @@ section { position: relative; display: flex; justify-content: center; width: 100
         }
     }
     .img { min-width: 36%; background: 100%; background: url(../app/creative/test.png); background-size:cover; background-repeat: no-repeat; background-position: center center; display: none;
-        @include respond-to(tablet) { display: block; }
+        @include respond-to(desktop-1024) { display: block; }
     }
 }
 

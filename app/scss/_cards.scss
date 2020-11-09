@@ -316,23 +316,29 @@
     }
 }
 
+.updates-wrapper {
+    .cards_focus-area-initiative-updates {
+        .card { 
+            @include respond-to(tablet) { flex: 0 0 33.3%; max-width: 33.3%; margin-bottom: 32px; }
+        }
+    }
+}
+
 .cards_explore-links { display: flex; flex-wrap: wrap; position: relative; margin-left: -16px; margin-right: -16px; width: 100%; max-width: 1176px;
     .card { position: relative; flex: 0 0 100%; max-width: 100%; padding-left: 16px; padding-right: 16px; margin-bottom: 32px;
         @include respond-to(tablet) { flex: 0 0 33.3%; max-width: 33.3%; }
-        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; border: 1px solid #E8E8E8; height: 100%; overflow: hidden; 
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; border: 1px solid #E8E8E8; height: 100%; overflow: hidden; transition: all 0.2s ease-out;
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
             .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 32px 24px;
                 img { width: 100%; height: auto; max-width: 18px; }
                 .external-url { position: relative; font-size: 16px; padding-top: 12px; padding-right: 32px; cursor: pointer;
-                    a { text-decoration: underline;
-                        &:link, &:visited, &:active { color: inherit; }
-                        &:after { content: ''; position: absolute; background: url(../app/creative/icon-external-link-red.png); background-size: contain; background-repeat: no-repeat; width: 10px; height: 10px; margin: 6px 0 0 8px; filter: grayscale(1); }
-                        &:hover { color: $primary-color; 
-                            &:after { filter: grayscale(0); }
-                        }
-                    }
+                    &:after { content: ''; position: absolute; background: url(../app/creative/icon-external-link-red.png); background-size: contain; background-repeat: no-repeat; width: 10px; height: 10px; margin: 6px 0 0 8px; filter: grayscale(1); }
                 }
                 .description { font-size: 14px; line-height: 21px; padding-top: 28px; }
             }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .external-url { color: $primary-color; }
+            &:hover .external-url:after { filter: grayscale(0); }
         }
     }
 }
@@ -506,12 +512,15 @@
 /* CARD DETAIL */
 
 .card_detail { position: relative;
-    .theme { width: max-content; font-size: 12px; font-weight: 700; color: #4A4A4A; line-height: 32px; background: rgba(#67B1E2,.10); padding: 0 8px; margin-bottom: 24px;
-        @include respond-to(tablet) { margin-bottom: 32px; }
+    .theme { width: auto; font-size: 12px; font-weight: 700; color: #4A4A4A; line-height: 32px; background: rgba(#67B1E2,.10); padding: 0 8px; margin-bottom: 24px;
+        @include respond-to(tablet) { width: max-content; margin-bottom: 32px; }
         &.blue { background: rgba(#67B1E2,.1); }
         &.red { background: rgba(192,32,50,.1); }
         &.orange { background: rgba(#F18A21, .1); }
         &.green { background: rgba(#92C83E, .13); }
+    }
+    .initiative-title { width: auto; font-size: 12px; font-weight: 700; color: #4A4A4A; line-height: 32px; background: rgba(192,32,50,.1);; padding: 0 8px; margin-bottom: 24px;
+        @include respond-to(tablet) { width: max-content; margin-bottom: 32px; }
     }
     h1 { font-size: 32px; line-height: 1.35; font-weight: 400;
         @include respond-to(tablet) { font-size: 48px; }
@@ -558,20 +567,18 @@
     @include respond-to(tablet) { margin-left: -16px; margin-right: -16px; }
     .card { position: relative; flex: 0 0 100%; max-width: 100%; margin-bottom: 32px;
         @include respond-to(tablet) { flex: 1; max-width: 380px; padding-left: 16px; padding-right: 16px; }
-        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; border: 1px solid #E8E8E8; height: 100%; overflow: hidden; 
+        .card-body { display: flex; flex-direction: column; position: relative; background: #fff; border: 1px solid #E8E8E8; height: 100%; overflow: hidden; transition: all 0.2s ease-out;
+            a { display: flex; flex-direction: column; height: 100%; cursor: pointer; }
             .info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; width: 100%; padding: 32px 24px;
                 img { width: 100%; height: auto; max-width: 18px; }
                 .external-url { position: relative; font-size: 16px; padding-top: 12px; padding-right: 32px; cursor: pointer;
-                    a { text-decoration: underline;
-                        &:link, &:visited, &:active { color: inherit; }
-                        &:after { content: ''; position: absolute; background: url(../app/creative/icon-external-link-red.png); background-size: contain; background-repeat: no-repeat; width: 10px; height: 10px; margin: 6px 0 0 8px; filter: grayscale(1); }
-                        &:hover { color: $primary-color; 
-                            &:after { filter: grayscale(0); }
-                        }
-                    }
+                    &:after { content: ''; position: absolute; background: url(../app/creative/icon-external-link-red.png); background-size: contain; background-repeat: no-repeat; width: 10px; height: 10px; margin: 6px 0 0 8px; filter: grayscale(1); }
                 }
                 .description { font-size: 16px; line-height: 21px; padding-top: 28px; }
             }
+            &:hover { box-shadow: 0 12px 32px 0 rgba(#14181D,0.08); }
+            &:hover .external-url { color: $primary-color; }
+            &:hover .external-url:after { filter: grayscale(0); }
         }
     }
 }
