@@ -20,6 +20,17 @@
         h1 { padding-bottom: 20px; }
         h4 { padding-bottom: 24px; }
         p { font-size: 16px; line-height: 28px; }
+        .external-fa-link { display: flex; position: relative; padding-bottom: 24px;
+            img { width: 100%; height: auto; max-width: 18px; }
+            .external-url { position: relative; font-size: 18px; font-weight: 600; padding-left: 12px; text-decoration: underline; cursor: pointer;
+                a { color: inherit;
+                    &:link, &:visited, &:active { color: inherit; }
+                }
+                &:after { content: ''; position: absolute; background: url(../app/creative/icon-external-link-red.png); background-size: contain; background-repeat: no-repeat; width: 10px; height: 10px; margin: 8px 0 0 8px; filter: grayscale(1); }
+            }
+            &:hover a { color: #C02032; }
+            &:hover .external-url:after { filter: grayscale(0); }
+        }
         .social-navigation { display: flex; align-items: center;
             @include respond-to(desktop-1024) { display: none; }
             ul { display: flex; flex-direction: row; align-items: baseline; margin: 0; padding: 0; list-style: none; font-size: 16px;

@@ -7305,6 +7305,59 @@ section {
   line-height: 28px;
 }
 
+.focus-area-introduction_info .external-fa-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.focus-area-introduction_info .external-fa-link img {
+  width: 100%;
+  height: auto;
+  max-width: 18px;
+}
+
+.focus-area-introduction_info .external-fa-link .external-url {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.focus-area-introduction_info .external-fa-link .external-url a {
+  color: inherit;
+}
+
+.focus-area-introduction_info .external-fa-link .external-url a:link, .focus-area-introduction_info .external-fa-link .external-url a:visited, .focus-area-introduction_info .external-fa-link .external-url a:active {
+  color: inherit;
+}
+
+.focus-area-introduction_info .external-fa-link .external-url:after {
+  content: '';
+  position: absolute;
+  background: url(../app/creative/icon-external-link-red.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  margin: 8px 0 0 8px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.focus-area-introduction_info .external-fa-link:hover a {
+  color: #C02032;
+}
+
+.focus-area-introduction_info .external-fa-link:hover .external-url:after {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
 .focus-area-introduction_info .social-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
